@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--shape为椭圆形，当View长宽相等即为圆形-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <!--填充色-->
+    <solid android:color="@color/text_color" />
+
+    <padding
+        android:left="10dp"
+        android:right="10dp"
+        android:top="10dp"
+        android:bottom="10dp" />
+
+    <!--边框颜色和大小-->
+    <stroke
+        android:color="@color/primary_color"
+        android:width="1dp" />
+
+</shape>

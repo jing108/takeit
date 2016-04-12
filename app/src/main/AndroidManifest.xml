@@ -1,0 +1,75 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wt.first"
+    android:versionCode="2"
+    android:versionName="1.0">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--<uses-permission android:name="android.permission.READ_PHONE_STATE" />-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    
+
+    <application android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="@drawable/aaba"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".Atys.StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Atys.MainActivity" />
+        <activity android:name=".Atys.LoginActivity" />
+        <activity android:name=".Atys.JoinAccountActivity" />
+        <activity android:name=".Atys.AddBillActivity" />
+        <activity android:name=".zxing.activity.CaptureActivity" />
+        <activity android:name=".Atys.InviteJoinByEr" />
+        
+        <activity android:name="cn.bmob.v3.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <service
+            android:name="cn.bmob.push.lib.service.PushService"
+            android:label="PushService"
+            android:process="cn.bmob.push"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.bmob.push.lib.service.PushService" />
+            </intent-filter>
+        </service>
+        
+        <receiver android:name="cn.bmob.push.PushReceiver">
+
+            <intent-filter>
+                <!--系统启动完成后会调用-->
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <!--解锁完成后会调用-->
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <!--监听网络连通性-->
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".Receiver.NewBillReceiver">
+            <intent-filter>
+                <action android:name="cn.bmob.push.action.MESSAGE"/>
+            </intent-filter>
+        </receiver>
+
+        <meta-data android:value="" android:name="BMOB_CHANNEL" />
+
+    </application>
+
+</manifest>

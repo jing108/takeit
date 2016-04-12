@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="51dp"
+    android:layout_alignParentBottom="true"
+    android:background="@color/text_color"
+    android:id="@+id/layout_bottom_bar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eee"
+        android:layout_alignParentTop="true" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <LinearLayout android:id="@+id/tabBtn_takeit"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:descendantFocusability="beforeDescendants"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+            <ImageButton android:id="@+id/btn_takeit"
+                android:layout_marginTop="4dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:clickable="false"
+                android:background="#0000"
+                android:src="@drawable/free"
+                android:scaleType="centerCrop"
+                />
+            <TextView android:id="@+id/tv_takeit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/firstTakeit"
+                android:textSize="12sp"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/tabBtn_detail"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:descendantFocusability="beforeDescendants"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton android:id="@+id/btn_detail"
+                android:layout_marginTop="4dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:clickable="false"
+                android:background="#0000"
+                android:src="@drawable/find"
+                android:scaleType="centerCrop"
+                />
+            <TextView android:id="@+id/tv_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detail"
+                android:textSize="12sp"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/tabBtn_me"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:descendantFocusability="beforeDescendants"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <ImageButton android:id="@+id/btn_me"
+                android:layout_marginTop="4dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:clickable="false"
+                android:background="#0000"
+                android:src="@drawable/me"
+                android:scaleType="centerCrop"
+                />
+            <TextView android:id="@+id/tv_me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/me"
+                android:textSize="12sp"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

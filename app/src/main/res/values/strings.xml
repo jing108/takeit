@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">AA吧</string>
+    <string name="firstTakeit">先记上</string>
+    <string name="me">我</string>
+    <string name="detail">明细</string>
+    <string name="sina_login">新浪登录</string>
+    <string name="weixin_login">微信登录</string>
+    <string name="qq_login">QQ登录</string>
+    <string name="please_input_username">请输入用户名...</string>
+    <string name="username">用户名</string>
+    <string name="password">密码</string>
+    <string name="login">登录</string>
+    <string name="sign_in">注册</string>
+    <string name="phonenum">手机号</string>
+    <string name="nameorpwd_cannot_empty">手机号或密码不能为空</string>
+    <string name="login_fail">登录失败：用户名或密码不正确</string>
+    <string name="signin_fail">注册失败：</string>
+    <string name="signin_success">注册成功</string>
+    <string name="click_to_add_account">创建/加入账本</string>
+    <string name="account_id">账本编号</string>
+    <string name="join_account">扫一扫加入账本</string>
+    <string name="create_account">创建账本</string>
+    <string name="or">或者</string>
+    <string name="account_name">账本名称</string>
+    <string name="logout">退出登录</string>
+    <string name="leave_account">离开该账本</string>
+    <string name="not_allow_leave_account">你在账本中还有帐没有结，不允许离开账本</string>
+    <string name="btn_text_eat">吃饭</string>
+    <string name="btn_text_play">娱乐</string>
+    <string name="btn_text_life">水电</string>
+    <string name="btn_text_other">其他</string>
+    <string name="btn_text_takeit">记上</string>
+
+    <!--bill的时间说明-->
+
+    <!--RefreshableView使用的string-->
+    <string name="pull_to_fresh">下拉可以刷新</string>
+    <string name="updated_at">上次更新于%1$s前</string>
+    <string name="not_updated_yet">暂未更新过</string>
+    <string name="time_error">时间有问题</string>
+    <string name="updated_just_now">刚刚更新</string>
+    <string name="release_to_fresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新</string>
+    <string name="loading_more_data">加载中</string>
+    <string name="no_more_data">没有了...</string>
+    <string name="content">备注</string>
+    <string name="jine">金额</string>
+</resources>

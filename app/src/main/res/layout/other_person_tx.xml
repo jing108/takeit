@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="55dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="8dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:orientation="vertical">
+
+    <com.wt.first.CustomView.CircleHead
+        android:id="@+id/test_tx"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        />
+
+    <TextView android:id="@+id/tv_others_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textColor="@color/secondary_text_color"
+        android:textSize="15sp"
+        />
+
+</LinearLayout>
